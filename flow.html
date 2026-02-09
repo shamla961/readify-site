@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Readify - Reading Flow</title>
+
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="stylesheet" href="css/style.css">
+
+     <script src="js/common.js" defer></script>
+     <script src="js/flow.js" defer></script>
+</head>
+<body>
+ 
+<header>
+
+  <div class="container navbar">
+
+    <div class="brand">
+      <img src="images/icon.png" alt="Readify logo">
+
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <button id="hamburger" class="hamburger">☰</button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Book Explorer</a>
+    <a href="tracker.html">Tracker</a>
+    <a href="recommender.html">Recommender</a>
+    <a href="flow.html">Flow</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+</header>
+
+
+<main class="container">
+
+<h1 style="margin-top:20px;"> Reading Focus Room</h1>
+<p>Relax, play cozy sounds and track your reading journey.</p>
+
+<div class="flow-grid">
+
+  <!-- LEFT SIDE : MUSIC -->
+  <div class="card">
+    <h2>Focus Music</h2>
+    <p>Create a calm reading environment.</p>
+
+    <div class="music-box">
+      <button class="btn" id="btnSound">▶ Play / Pause Ambience</button>
+      <p style="margin-top:10px;">Soft nature sounds for deep reading focus.</p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE : COMPLETED BOOKS -->
+  <div class="card">
+    <h2> Completed Books</h2>
+    <p>Track books you finished.</p>
+
+    <input type="text" id="completedBook" placeholder="Enter completed book">
+
+    <button class="btn" id="btnAddCompleted" style="margin-top:10px;">
+      Add to Completed
+    </button>
+
+    <div class="completed-box">
+      <p id="completedOutput"></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- QUOTE SECTION -->
+<div class="card" style="margin-top:25px;text-align:center;">
+  <h2> Stay in the Story</h2>
+  <p style="font-size:18px;">
+  “Reading gives us somewhere to go when we have to stay where we are.”
+  </p>
+</div>
+
+</main>
+
+<br>
+  <br>
+  <br>
+  <br>
+
+  <audio id="cozyAudio" loop>
+  <source src="images/music.mp3" type="audio/mpeg">
+</audio>
+
+<footer class="footer-bar">
+  <div class="footer-social">
+  <a href="https://www.facebook.com" target="_blank">Facebook</a>
+  <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  <a href="https://twitter.com" target="_blank">Twitter</a>
+  <a href="https://www.youtube.com" target="_blank">YouTube</a>
+</div>
+
+  <p class="footer-copy">© 2026 Readify</p>
+  
+</footer>
+
+
+

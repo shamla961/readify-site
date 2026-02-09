@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify - Feedback </title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/common.js" defer></script>
+  <script src="js/feedback.js" defer></script>
+</head>
+<body>
+
+<header>
+
+  <div class="container navbar">
+
+    <div class="brand">
+      <img src="images/icon.png" alt="Readify logo">
+    
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <button id="hamburger" class="hamburger">☰</button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Book Explorer</a>
+    <a href="tracker.html">Tracker</a>
+    <a href="recommender.html">Recommender</a>
+    <a href="flow.html">Flow</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+</header>
+
+
+<main class="container">
+
+  <section class="card">
+    <h1>Feedback</h1>
+    <p>Send us your thoughts and suggestions.</p>
+
+    <div style="margin-top:12px;">
+      <p>Name:</p>
+      <input type="text" id="fbName" placeholder="Your name">
+    </div>
+
+    <div style="margin-top:12px;">
+      <p>Email:</p>
+      <input type="email" id="fbEmail" placeholder="example@mail.com">
+    </div>
+
+    <div style="margin-top:12px;">
+      <p>Message:</p>
+      <textarea id="fbMessage" rows="5" placeholder="Type your message..."></textarea>
+    </div>
+
+    <div style="margin-top:12px;">
+      <button class="btn" id="btnSend" type="button">Submit Feedback</button>
+    </div>
+
+    <p id="fbOutput" style="margin-top:10px;font-weight:bold;"></p>
+  </section>
+
+  <section class="card">
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">How do I use the Book Explorer?</button>
+      <div class="faq-a">Go to Book Explorer page and use search and filter options.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Does Readify save my data?</button>
+      <div class="faq-a">Yes. Some information is saved using localStorage.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Can I access Readify on mobile?</button>
+      <div class="faq-a">Yes. The website is responsive and works on phones.</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer-bar">
+  <div class="footer-social">
+  <a href="https://www.facebook.com" target="_blank">Facebook</a>
+  <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  <a href="https://twitter.com" target="_blank">Twitter</a>
+  <a href="https://www.youtube.com" target="_blank">YouTube</a>
+</div>
+
+  <p class="footer-copy">© 2026 Readify</p>
+    
+</body>
+</html>

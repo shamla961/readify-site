@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Readify - Explorer</title>
+
+    <link rel="icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="css/style.css">
+      
+      <script src="js/data.js" defer></script>
+      <script src="js/common.js" defer></script>
+      <script src="js/explorer.js" defer></script>
+
+
+
+</head>
+<body>
+
+<header>
+
+  <div class="container navbar">
+
+    <div class="brand">
+      <img src="images/icon.png" alt="Readify logo">
+    
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <button id="hamburger" class="hamburger">☰</button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Book Explorer</a>
+    <a href="tracker.html">Tracker</a>
+    <a href="recommender.html">Recommender</a>
+    <a href="flow.html">Flow</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+</header>
+
+<main class="container">
+    <br>
+
+
+
+    <section class="card">
+        <h1> Book Explorer </h1>
+        <br>
+        <p> Seach books by title or author and filter by genre. </p>
+
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;" >
+            <input id="searchBox" type="text" placeholder="search by title or author">
+            <select id="genreFilter">
+              <option value="all">All Genres</option>
+              <option value="fiction">Fiction</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="sci-fi">Sci-fi</option>
+            </select>
+            <button class="btn" id="btnClear" type="button">Clear</button>
+             
+        </div>
+         <div class="books-grid" id="booksGrid"></div>
+    </section>
+
+</main>
+ 
+<!-- Modal for book details -->
+
+<div id="bookModal">
+  <div class="modal-box">
+
+    <span class="closeBtn" id="closeModal">✖</span>
+
+    <h2 class="modal-title" id="mTitle">Book title</h2>
+
+    <div class="modal-section">
+      <h3>Synopsis</h3>
+      <p id="mSynopsis"></p>
+    </div>
+
+    <div class="modal-section">
+      <h4>Prequels</h4>
+      <ul id="mPrequels"></ul>
+    </div>
+
+    <div class="modal-section">
+      <h4>Sequels</h4>
+      <ul id="mSequels"></ul>
+    </div>
+
+    <div class="modal-section">
+      <h4>Reviews & Ratings</h4>
+      <table id="reviewTable">
+        <tr>
+          <th>Name</th>
+          <th>Rating</th>
+          <th>Comment</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+
+<footer class="footer-bar">
+  <div class="footer-social">
+  <a href="https://www.facebook.com" target="_blank">Facebook</a>
+  <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  <a href="https://twitter.com" target="_blank">Twitter</a>
+  <a href="https://www.youtube.com" target="_blank">YouTube</a>
+</div>
+
+  <p class="footer-copy">© 2026 Readify</p>
+</footer>
+
+</body>
+</html>

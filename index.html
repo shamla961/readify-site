@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Readify - Home</title>
+      <link rel="icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="manifest" href="manifest.json">
+
+      
+      <script src="js/data.js" defer></script>
+      <script src="js/common.js" defer></script>
+      <script src="js/home.js" defer></script>
+</head>
+
+<body>
+<header>
+
+  <div class="container navbar">
+
+    <div class="brand">
+      <img src="images/icon.png" alt="Readify logo">
+    
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <button id="hamburger" class="hamburger">☰</button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Book Explorer</a>
+    <a href="tracker.html">Tracker</a>
+    <a href="recommender.html">Recommender</a>
+    <a href="flow.html">Flow</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+</header>
+
+<main class="container">
+
+  <!-- WELCOME HERO -->
+  <section class="welcome-hero">
+    <div>
+      <h1>Welcome to Readify </h1>
+      <p>Your cozy digital space to explore books, track reading, and discover your next favorite story.</p> <br>
+      <a href="explorer.html" class="explore-link">Explore Books</a>
+    </div>
+
+    <img src="images/books-home.webp" alt="reading">
+  </section>
+
+
+  <!-- AUTHOR OF DAY -->
+  <section class="author-day">
+    <h2> Author of the Day</h2>
+    <p id="authorText"></p>
+  </section>
+
+
+  <!-- FEATURED BOOKS -->
+  <section class="featured">
+    <br>
+    <h2>Popular Books</h2>
+    <div class="featured-row">
+  <img src="images/Atomic-habits.jpg" alt="Atomic Habits">
+  <img src="images/The-art-of-being-alone.jpg" alt="The art of being Alone">
+  <img src="images/Another-life.jpg" alt="Meet me in Another Life">
+  <img src="images/Almost-adulting.jpg" alt="aalmost Adulting">
+</div>
+
+  </section>
+
+
+  <!-- QUOTE BANNER -->
+  <section class="quote-banner">
+    <div class="quote-left">
+      <h1 id="heroQuote">“A reader lives a thousand lives before he dies.”</h1>
+      <p id="heroAuthor">– George R.R Martin</p>
+    </div>
+
+    <img id="quoteSlide" src="images/homepage.jpg" alt="homepage">
+
+  </section>
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Join our reading community</h2>
+    <br>
+    <input type="email" id="emailBox" placeholder="Enter your email">
+    <button class="btn" id="btnSubscribe" type="button">Subscribe</button>
+    <br>
+    <p id="subMsg"></p>
+
+
+  </section>
+
+</main>
+<br>
+
+
+<footer class="footer-bar">
+ <div class="footer-social">
+  <a href="https://www.facebook.com" target="_blank">Facebook</a>
+  <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  <a href="https://twitter.com" target="_blank">Twitter</a>
+  <a href="https://www.youtube.com" target="_blank">YouTube</a>
+</div>
+
+  <p class="footer-copy">© 2026 Readify</p>
+</footer>
+</body>
+</html>
